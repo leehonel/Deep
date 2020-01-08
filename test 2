@@ -1,0 +1,3 @@
+Test for local pull from remote repo
+>git init
+>git pull
