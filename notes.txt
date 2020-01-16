@@ -30,5 +30,8 @@ Python -h is used to print out the help documentation.
 
 >Variable Types
 ***************
+Variables are reserved memory locations to store values.
+In py, varibale type declaration happens automatically when a value is assigned to a variable.
+Tuples are a sequence datatypte like lists but unlike lists which are enclosed with square brackets, tuples are enclosed with parentheses.
 
-
+The py interpreter can also be used as a calculator.
