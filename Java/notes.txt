@@ -1,0 +1,64 @@
+// Monday, February 10, 2020
+// My official(self-driven) start into the java programming language.
+Java is an OOP language used for dev. of apps for mobile, web and desktop.
+It is platform independent meaning a program written in java can be executed in any operating system.
+Java code is converted into machine code through compilation and every computer platform has its own machine code instruction set meaning machine code is platform dependent.
+Instead of converting into machine code directly, java uses a two-step compilation which first converts the code into bytecode(which is platform independent and then machine code)
+	This two-step compilation allows for java code to be run on all platforms as long as the computer running the program has a JVM(Java Virtual Machine) installed.
+//Object Oriented Programming(OOP) is an approach to programming that breaks down a programming problem into objects that interact with each other.
+Components of a JDK:
+	Compiler - to compile written code into byte code.
+	Archiver - to package and distribute java files.
+	Documentation Generator - to generate HTML documentation from our java code.
+	
+	//JDK is for dev. of Java programs
+	//JRE is for running of java programs
+For build tools, you can use either Maven or Gradle. I am currently using gradle.
+During the creation of a project, pay attention to the name you give to your Main Class
+
+Basic Structure of a Java program //Chapter One
+*********************************
+A package is a grouping of related classes and interfaces.
+When a package name is written at the top of a .java file, this is asking the compiler to include the file in that package. A folder named after that package will be created and all the files that are part of that package will be stored in that folder.
+Naming packages helps prevent naming conflicts. Two or more files can have the same name as long as they belong to different packages
+
+Variables and Operators//Chapter Three
+***********************
+Variables are names given to data that we need to store and manipulate in our programs.
+The declaration of a variable first starts by stating its data type and then the varible name.
+	eg. int userName
+The following are pre-defined data types in Java:
+1. Byte - is used for storing intergers from -128 to 127. This is commonly used in cases where storage space is a concern or when it's clearly known that the value of the variable will not exceed the range.
+2. Short - it uses 2 bytes of storage space and has a range of -32768 to 32767. 
+3. Int - this is the most commonly used representation of variables because of its practicality. It has a range of -2^31 to 2^31. 
+4. Long - this uses a range of 8bytes ie. -2^63 to 2^63. To initialize a long value, a suffix of L has to be added. 
+5. Float - It is used to store numbers with decimal bits to them. To initialize a Float value, a suffix of F has to be added.
+6. Double - it is more precise and efficient substitute to float. Unless memory space is a concern, you should always use a double instead of a float. 
+7. Char - this is used to store a single unicode charecter and it uses two bytes of memory. When initializing a char value, it has to be enclosed in single quotes. 
+8. Boolean - It is a special data type that is used to store only two values: true and false.
+
+Variable names in java can only contain letters, numbers, underscore or the dollar sign. 
+It is conventional and good practice to always start the first charecter of a variable name with a letter. 
+//Reserved words - are words that cannot be used as variable names because they already have pre-assigned meaning in the language. 
+It is conventional practice to use camel casing while naming variables in java. 
+Camel casing involves capitalizing the first letter of each word except the first word. 
+Varibale names are case sensitive.
+Two variables of the same data type can be initialized in one statement.  
+(=) is the assignment operator and it is used to assign the value on the right side of it to the variable to its left.
+	Other assignment operators are (+= and -=) which are used to increment and decrement respectively the variable on the left by the value on the right.  
+	(++ and --) are used to increase and decrease the variable values respectively by one. 
+It is alright to assign the value of a variable to another variable. 
+Basic mathematical operators (+, -, *, /, %) also apply in java. 
+//Type Casting is the act of converting from one data type to another. 
+
+Arrays and Strings//Chapter Four
+******************
+A string is essentially a piece of text. 
+To declare and initialize a string variable, you write:
+	String variableName ="String text";
+A string is an object of the String class which provides a number of pre-written methods that can be used when working with strings. 
+//A method is a block of reusable code that performs a certain task.
+Examples of methods in the String class
+	1. length() - this tells the total number of charecters the string has.
+	//Whenever a method is used, it is presceded by a dot and then followed by parentheses after its name.
+	//eg. .lenth()
