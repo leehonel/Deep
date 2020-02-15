@@ -61,4 +61,28 @@ A string is an object of the String class which provides a number of pre-written
 Examples of methods in the String class
 	1. length() - this tells the total number of charecters the string has.
 	//Whenever a method is used, it is presceded by a dot and then followed by parentheses after its name.
-	//eg. .lenth()
+	//eg. String myLength = "Hello World".lenth();
+	2. toUpperCase() - is used to convert a string to upper case
+	3. toLowerCase() - is used to convert a string to lower case.
+//Arguments are data required by some methods in order for them to work. The arguments are put inside the parentheses that follow a method.
+	4. substring() - this is used to extract a substring from a longer string. This method requires arguments in the form of an interger, which tells the compiler from which part of the long string it should start extracting the substring. 
+	5. charAt() - this method returns a single charecter from a string at the specified location.
+	6. equals() - this method is used to compare if two strings are equal and returns true if they are otherwise false if they are not. 
+	7. split() - this method splits a string into substrings based on a user-defined separator/delimeter. 
+
+An Array is a collection of related data items.
+There are two ways to declare array varibles in java:
+	1. datatype[] variableName;
+		eg. int[] userName;
+	2. datatype variableName[];
+		eg. int userName[];
+	3. datatype[] variableName = new datatype[array size];
+		eg. int[] userAge = new int[5];
+Once you initialize an array, the size of the array cannot be changed. But the values of the elements in the array can be changed by accessing them through their indexes.
+//Import statements should appear after the package statement and before the class declaration.
+The following are methods available to arrays:
+	1. equals() - this is used to check if two arrays are equal to each other. 
+	2. copyOfRange() - Allows you to copy the contents of one array into another. 
+	//revisit static array methods.
+	3. toString() - this returns a string that represents the contents of an array making it easy to display the contents of an array.
+			//continue from here.
