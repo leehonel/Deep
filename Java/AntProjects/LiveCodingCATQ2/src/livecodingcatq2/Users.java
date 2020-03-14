@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Users {
     public String userLastName;
-    Scanner keyBoardInput = new Scanner(System.in); 
+    public static String choice;
+    static Scanner keyBoardInput = new Scanner(System.in); 
    
     static void helloWorld(){
         System.out.println("Test one");
@@ -19,6 +20,19 @@ public class Users {
         userLastName = keyBoardInput.nextLine();
         
         //return userLastName;
+    }
+    public static String proceed(){
+        System.out.print("\n\n*************\nHow would you like to proceed: 1. output 2. exit: ");
+        choice = keyBoardInput.next();
+        if ("output".equals(choice)) {
+            Students.studentList();
+          
+        } 
+        else {
+            
+        }
+        return choice;
+    
     }
     
     

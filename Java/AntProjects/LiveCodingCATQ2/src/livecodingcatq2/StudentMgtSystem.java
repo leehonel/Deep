@@ -13,8 +13,8 @@
 
 package livecodingcatq2;
 import java.util.Scanner;
+import static livecodingcatq2.Students.studentList;
 
-import com.sun.java.accessibility.util.EventID;
 import static livecodingcatq2.Users.helloWorld; //an import to allow for access to the static method helloWorld in Users 
 
 
@@ -29,12 +29,13 @@ public class StudentMgtSystem {
        helloWorld();
        System.out.println("Hello, welcome to the Student Management System.");
        Users userOne = new Users("one");
+       System.out.println("\nEnter the student details below");
        //System.out.print("Enter Student Index: ");
       // Students studentOne = new Students("one");         //instantiating the constructor at this point allows for creation of only one object
        
        
-        for (int i = 0; i < 5; i++) {
-            Students studentOne = new Students("one");      //while instantiating the constructor at this point limits the use of the studentOne object outside of this scope.
+        //for (int i = 0; i < 2; i++) {
+        //    Students studentOne = new Students("one");      //while instantiating the constructor at this point limits the use of the studentOne object outside of this scope.
             /*
             for (int j = 0; j < 2; j++) {
                 studentOne.studentList();
@@ -56,16 +57,13 @@ public class StudentMgtSystem {
             */
             //studentOne.studentList();
             //System.out.println("\n\n"+student);
-        }
-        
-        
-       
-       
-       
+            //String listOutput = studentOne;
+       // }
+        Students studentOne = new Students("one");
+        Users.proceed();
        
         
         
-
     
     }
     
