@@ -9,6 +9,6 @@ package mobilemoneytransfer;
  *
  * @author backey
  */
-public class Bank {
+class keyBoadInput {
     
 }
