@@ -1,4 +1,5 @@
 // Monday, February 10, 2020
+
 // My official(self-driven) start into the java programming language.
 /*
    Note to self:
@@ -8,8 +9,8 @@
 
 //Curly braces are optional if there is only one statement to execute
 //When we code a program, we should always try to pre-empt possible errors. 
-
-
+//Objects make calls to methods
+//It is considered good practice to separate classes into files whenever possible.  
 
 
 
@@ -320,6 +321,17 @@ There may be cases where a method does not need to return an answer but simply u
 **Setter and Getter Methods - are written to make privately declared fields accessible to other classes that are not their own.
 	- Getter and Setter methods give greater control over what rights other classes have when assigning them privately declared fields. 
 	- It is convention to name setter methods with the word 'set' followed by the name of the field. 
+Arrays can also be used as parameters in methods. The syntax for this is:
+	modifier returnType methodName(dataType[] ){
+	
+	}
+	To call such a method, an array has to be declared and passed as an argument in the method. 
+An array can also be returned in a method. The syntax for this is:
+	modifier returnType[] methodName(parameters){
+
+	}
+	To use this method, an array has to be declared and the method's result assigned to it. 
+
 
 Constructors
 ************
@@ -336,3 +348,32 @@ This refers to making use of a class to create an object
 The syntax for instantiating an object is:
 	ClassName objectName = new ClassName(arguments);
 After you instantiate an object, you can use the dot (.) operator after the object's name to access any public field or method declared in any class. 
+
+
+Static
+******
+When a method/field is declared as static, you do not need to instantiate an object in order to access it, but rather just the name of the class in which it is declared. 
+	eg. classname.method/fieldname
+//It is good practice to separate classes into separate files whenever possible. 
+
+Primitive Type and Reference Type Parameters
+********************************************
+When you pass a primitive type variable, any change made to the value of the variable is only valid within the method itself. 
+While when you pass in a reference type variable, any changes made to the value of the variable are valid even after the method ends.
+
+			//Continue from page 102
+
+File Handling
+*************
+
+Import the java.io.* package to get access to the various classes available for file handling. 
+//the * after the import indicates you are importing the entire java.io package
+
+Reading a text file
+File Reading - Use the FileReader class, which reads the contents of a file as a stream of charecters, reading in one charecter at a time.
+		A more efficient way to do this would be to wrap the a BufferReader object around the FileReader object.
+		The BufferReader object provides buffering for the reading operation by reading larger blocks at a time and thus speeding up the process.	
+	        Once you create a FileReader object you are ready to read data from the file.  
+File Writing - For this, we use the BufferWriter and FileWritter classes all found in the java.io package.
+
+
